@@ -1,0 +1,41 @@
+
+INFO     │ ========================================
+INFO     │   TRADEBOT CLI SESSION STARTED
+INFO     │ ========================================
+INFO     │ CLI arguments received — symbol=BTCUSDT, side=BUY, type=LIMIT, quantity=0.001, price=70000.0
+
+┌─────────────────────────────────────────┐
+│           ORDER REQUEST SUMMARY          │
+├─────────────────────────────────────────┤
+│  Symbol     : BTCUSDT                
+   │
+│  Side       : BUY                    
+   │
+│  Type       : LIMIT                  
+   │
+│  Quantity   : 0.001                  
+   │
+│  Price      : 70000.0                
+   │
+└─────────────────────────────────────────┘
+
+INFO     │ Order request summary displayed to user
+INFO     │ Initialising Binance API client
+INFO     │ BinanceClient initialised — base URL: https://testnet.binancefuture.com
+INFO     │ Binance API client ready    
+INFO     │ Calling placeOrder()        
+INFO     │ === Starting order placement ===
+INFO     │ Running input validation
+INFO     │ All inputs validated successfully
+INFO     │ Placing BUY LIMIT order: symbol=BTCUSDT  qty=0.001  price=70000.0  
+INFO     │ Sending order to Binance API endpoint: /fapi/v1/order
+INFO     │ Preparing POST request to /fapi/v1/order
+INFO     │ >>> Sending POST https://testnet.binancefuture.com/fapi/v1/order   
+INFO     │ <<< Response status: 401
+ERROR    │ Binance API returned error — HTTP 401, code=-2015, msg=Invalid API-key, IP, or permissions for action     
+ERROR    │ BINANCE API ERROR: statusCode=401, code=-2015, msg=Invalid API-key, IP, or permissions for action
+
+✘  Binance API Error: Binance API Error [401]  code=-2015  msg=Invalid API-key, IP, or permissions for action        
+INFO     │ ========================================
+INFO     │   TRADEBOT CLI SESSION ENDED
+INFO     │ ========================================
